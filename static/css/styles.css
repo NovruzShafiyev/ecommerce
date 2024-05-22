@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #333;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5em;
+    color: #007BFF;
+}
+
+#app {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px;
+    max-width: 400px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+input, select, button {
+    display: block;
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+input:focus, select:focus, button:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+select {
+    padding-right: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyMCAyMCIgZmlsbD0iI0NDQyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgNUw5IDEzTDE3IDVIMiIgLz4KPC9zdmc+Cg==') no-repeat right 10px center;
+    background-size: 12px 12px;
+    transition: border-color 0.3s;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+li:hover {
+    background-color: #f0f2f5;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
+}
+
+select:hover {
+    border-color: #007BFF;
+}
+
+section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+}
+
+#products {
+    background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+}
+
+#customers {
+    background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+}
+
+#cart {
+    background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+}
+
+#orders {
+    background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+}
